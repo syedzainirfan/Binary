@@ -1,0 +1,111 @@
+# # bin_list1=[0,1,0,0,1,0]
+# # bin_list2=[0,0,1,1,0,0]
+
+# # new_binlist=[]
+# # num1=0
+# # for x in range(len(bin_list1)):
+# #     num1+=2**x * bin_list1[5-x]
+# # print(num1)
+# # #print(bin(44))
+# # num2=0
+# # for x in range(len(bin_list2)):
+# #     num2+=2**x * bin_list2[5-x]
+# # print(num2)
+
+# # result1=num1*num2
+# # print(result1)
+
+# # result2=result1
+# # while result2>0:
+# #     result3=result2 % 2
+# #     result2=result2//2
+# #     new_binlist.append(result3)
+# # new_binlist.reverse()
+# # print(new_binlist)
+
+# # print(bin(result1))
+
+
+# # num1 = [1,  3, 1,4,2,3]
+# # num2 = [2, 2,7,5,7,3]
+# # num3=0
+# # new_octlist=[]
+# # dyn1=len(num1)
+# # dyn2=len(num2)
+# # for x in range(len(num1)):
+# #     num3+=8**x * num1[dyn1-1-x]
+# # print(num3)
+# # num4=0
+# # for x in range(len(num2)):
+# #     num4+=8**x * num2[dyn2-1-x]
+# # print(num4)
+
+# # result1=num3*num4
+# # print(result1)
+
+# # result2=result1
+# # while result2>0:
+# #     result3=result2 % 8
+# #     result2=result2//8
+# #     new_octlist.append(result3)
+# # new_octlist.reverse()
+# # print(new_octlist)
+# # print(oct(result1))
+
+
+# # num1 = [1,  3, 1,9,11,12,15,7,4,11]
+# # num2 = [2, 2,11,12,13,14,15,6,8,11,15,15,15,15,15]
+# # num3=0
+# # new_hexlist=[]
+# # dyn1=len(num1)
+# # dyn2=len(num2)
+
+# # for x in range(len(num1)):
+# #     num3+=16**x * num1[dyn1-1-x]
+# # print(num3)
+# # num4=0
+
+# # for x in range(len(num2)):
+# #     num4+=16**x * num2[dyn2-1-x]
+# # print(num4)
+
+# # result1=num3*num4
+# # print(result1)
+
+# # result2=result1
+# # while result2>0:
+# #     result3=result2 % 16
+# #     result2=result2//16
+# #     new_hexlist.append(result3)
+# # new_hexlist.reverse()
+# # print(new_hexlist)
+# # print(hex(0x2978210254810164657119))
+
+
+
+# # a=[1,1,1,1,0,0,0]
+# # b=[0,1,0,1,1,1,0]
+# # d=[]
+# # sum=0
+# # for x in range(len(a)-1,-1,-1):
+# #     print(x)
+
+# #     zain=a[x]+b[x]+sum
+# #     if zain==1:
+# #         d.append(1)
+# #         sum=0
+# #     elif zain==2:
+# #         d.append(0)
+# #         sum=1
+# #     elif zain==3:
+# #         d.append(1)
+# #         sum=1
+# #     elif zain==0:
+# #         d.append(0)
+# #         sum=0
+# #     else:
+# #         d.append()
+# # d.append(sum)
+# # # d.reverse()
+# # print(d)
+
