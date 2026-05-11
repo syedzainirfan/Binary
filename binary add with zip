@@ -1,0 +1,121 @@
+
+# num1 = [1, 0, 1, 1]
+# num2 = [1, 0, 0, 1]
+# d = []
+# carry = 0
+
+# for x, y in zip(num1[::-1], num2[::-1]):
+#     zain = x + y + carry 
+
+#     if zain == 1:
+#         d.append(1)
+#         carry = 0
+#     elif zain == 2:
+#         d.append(0)
+#         carry = 1
+#     elif zain == 3:
+#         d.append(1)
+#         carry = 1
+#     elif zain == 0:
+#         d.append(0)
+#         carry = 0
+
+# if carry == 1:
+#     d.append(1)
+# d.reverse()
+
+
+# print(d)
+
+
+
+
+# num1 = [1, 0, 1, 1, 1, 1, 0]
+# num2 = [1, 0, 0, 1]
+# d = []
+# length = max(len(num1), len(num2))
+# num1 = [0] * (length - len(num1)) + num1
+# num2 = [0] * (length - len(num2)) + num2
+# carry = 0
+
+# for x, y in zip(num1[::-1], num2[::-1]):
+#     zain = x + y + carry 
+
+
+#     if zain == 1:
+#         d.append(1)
+#         carry = 0
+#     elif zain == 2:
+#         d.append(0)
+#         carry = 1
+#     elif zain == 3:
+#         d.append(1)
+#         carry = 1
+#     elif zain == 0:
+#         d.append(0)
+#         carry = 0
+# for i in range(-len(num2),-len(num1)):
+#     # if carry == 1:
+#     #     d.append(1)
+#     if carry==1:
+#         d.append(1)
+#         sum=0
+#     elif carry==2:
+#         d.append(0)
+#         sum=1
+#     elif carry==0:
+#         d.append(0)
+#         sum=0
+# d.reverse()
+
+# print(d)
+
+
+
+# a=12345
+# print(bin(12345))
+# b=[]
+# while a > 0:
+#     num=a%2
+#     a=a//2
+#     b.append(num)
+# b.reverse()
+# print(b)
+
+
+# num1 = [0, 0, 1, 0, 1]
+# num2 = [0, 1, 1, 1, 0]
+# num3 = []
+# carry = 0
+
+# for x, y in zip(num1[::-1], num2[::-1]):
+#     zain = x + y + carry
+#     num3.append(zain % 2)    
+#     carry = zain // 2
+# num3.append(carry)
+# print(num3[::-1])
+
+num1 = [0, 0, 1, 0, 1, 1, 0]
+num2 =       [1, 1, 1, 0, 1]
+num3 = []
+
+length=max(len(num1),len(num2))
+num1=[0]*(length - len(num1))+num1
+num2=[0]*(length - len(num2))+num2
+
+carry = 0
+
+for x, y in zip(num1[::-1], num2[::-1]):
+    zain = x + y + carry
+    num3.append(zain % 2)    
+    carry = zain // 2
+
+for i in range(-len(num2),-len(num1)):
+    zain = x + y + carry
+    num3.append(zain % 2)    
+    carry = zain // 2
+
+if carry:
+    num3.append(carry)
+print(num3[::-1])
+
